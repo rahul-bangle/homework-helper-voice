@@ -148,7 +148,7 @@ const HomeDiscovery = ({ onNavigate }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="flex flex-col h-screen relative bg-white"
+      className="flex flex-col h-screen relative bg-white overflow-hidden"
     >
       <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
 
@@ -173,7 +173,7 @@ const HomeDiscovery = ({ onNavigate }) => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col items-center justify-center px-6 pb-32">
+      <main className="flex-1 flex flex-col items-center justify-center px-6 pb-8 overflow-hidden">
         <div className="w-full max-w-[310px] mb-10 p-4 bg-emerald-50/50 rounded-3xl border border-emerald-100/50 flex flex-col items-center">
           <div className="flex items-center gap-2 mb-2">
             <div className="bg-emerald-100 p-1 rounded-full">
@@ -192,7 +192,7 @@ const HomeDiscovery = ({ onNavigate }) => {
           </div>
         </div>
 
-        <h1 className="text-[24px] font-semibold text-center mb-8">What can I help with?</h1>
+        <h1 className="text-[22px] font-semibold text-center mb-6">What can I help with?</h1>
 
         <div className="grid grid-cols-2 gap-2 w-full max-w-[310px] mb-2">
           <Card
@@ -231,7 +231,7 @@ const HomeDiscovery = ({ onNavigate }) => {
       </main>
 
       {/* Bottom Input Area */}
-      <footer className="p-4 bg-white sticky bottom-0">
+      <footer className="p-4 pb-8 bg-white sticky bottom-0">
         <div className="flex items-center gap-3 p-1.5 pl-4 bg-gray-50 border border-gray-200 rounded-full shadow-sm">
           <Plus size={20} className="text-gray-500" />
           <input
