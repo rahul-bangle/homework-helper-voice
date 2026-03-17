@@ -36,3 +36,10 @@ body {
   background: #ccc;
   border-radius: 10px;
 }
+
+/* Make interactive elements have pointer cursor */
+button,
+a,
+[role="button"] {
+  cursor: pointer;
+}
